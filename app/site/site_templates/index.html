@@ -1,8 +1,5 @@
-<!-- Theres no doctype or title etc.in this file Which is typically on EVERY HTML file that we write like the base.html file. Instead we have the content for the middle of our page in this file. The starting code and the navbar code is in base.html. Whats going on here is something called extending, The home page will have a nav bar, the about me page, contact us page etc. It is going to be a lot easier to do it ths way (extending) without having to write the same code multiple times to have a navbar on multiple pages. The synatx below will begin the extending process-->
-
 {% extends 'base.html' %}
-
-{% block content %} <!-- This is how jinja talks using these symbols, and how were able to run python inside of our HTML. This is called block content, and what you want inside of your block. CHECK base.html for similar block code -->
+{% block content %} 
 <section class="bg-dark text-light text-center shadow">
     <div class="container p-5 bg-dark">
         <div class="row">
@@ -21,4 +18,4 @@
         </div>
     </div>
 </section>
-{% endblock %} <!-- This is how jinja talks using these symbols, and how were able to run python inside of our HTML -->
+{% endblock %}
